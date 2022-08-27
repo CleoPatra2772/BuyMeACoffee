@@ -37,7 +37,7 @@ contract BuyMeACoffee {
     * @param _name name of the coffee buyer
     * @param _message a nice message from the coffee buyer
     */
-    function buyCoffe(string memory _name, string memory _message) public payable {
+    function buyCoffee(string memory _name, string memory _message) public payable {
         require(msg.value > 0, "can't buy coffee with 0 eth" );
 
         //Add memo to storage
